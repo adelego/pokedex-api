@@ -1,3 +1,7 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+
+pokemons_list:
+    path: /pokemon
+    controller: App\Controller\PokemonController::get_list
