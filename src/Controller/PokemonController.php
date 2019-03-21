@@ -15,6 +15,6 @@ class PokemonController
   public function get_list()
   {
     $json = file_get_contents("../src/pokemon.json");
-    return new JsonResponse($json);
+    return new JsonResponse(json_decode($json));
   }
 }
